@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    margin-top: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: slide-down 1s ease-in-out;
+    font-size: xxx-large;
+}
+@keyframes slide-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn{
+    background-color: #ddd;
+    display: block;
+    margin: 0 auto;
+    padding:15px 40px;
+    border-radius:10px ;
+    border: 1px solid black;
+    box-shadow: 1px 5px 10px black;
+    font-size: medium;
+    animation: slide-up 1s ease-in-out ;
+}
+
+.btn:hover{
+    cursor: pointer;
+
+}
+@keyframes slide-up{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
