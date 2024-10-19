@@ -23,9 +23,9 @@ h1 {
     padding:15px 40px;
     border-radius:10px ;
     border: 1px solid black;
-    box-shadow: 1px 1px 10px black;
-    font-size: medium;
+    font-size: 20px;
     animation: insaneAnimation 2.5s infinite;
+    font-weight: 500;
 }
 
 

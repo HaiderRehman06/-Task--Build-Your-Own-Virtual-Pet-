@@ -22,3 +22,26 @@ var pet = {
         alert(`${this.name} is now ${this.age} years old! Happiness is now ${this.happiness}, Hunger is now ${this.hunger}.`);
     }
 };
+
+function startPetInteraction() {
+    let action;
+    do {
+        action = prompt("What would you like to do? (feed, play, age, exit)").toLowerCase();
+        switch (action) {
+            case "feed":
+                pet.feed();
+                break;
+            case "play":
+                pet.play();
+                break;
+            case "age":
+                pet.agePet();
+                break;
+            case "exit":
+                alert("Thank you for interacting with your pet!");
+                break;
+            default:
+                alert("Invalid action. Please choose 'feed', 'play', 'age', or 'exit'.");
+        }
+    } while (action !== "exit");
+}
