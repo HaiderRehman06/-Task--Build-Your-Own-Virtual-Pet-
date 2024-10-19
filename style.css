@@ -2,8 +2,8 @@ h1 {
     text-align: center;
     margin-top: 10%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    animation: slide-down 1s ease-in-out;
-    font-size: xxx-large;
+    animation: slide-down 0.5s ease-in-out;
+    font-size: 50px;
 }
 @keyframes slide-down{
     0%{
@@ -17,28 +17,45 @@ h1 {
 }
 
 .btn{
-    background-color: #ddd;
+    background-color:#61dafb;
     display: block;
     margin: 0 auto;
     padding:15px 40px;
     border-radius:10px ;
     border: 1px solid black;
-    box-shadow: 1px 5px 10px black;
+    box-shadow: 1px 1px 10px black;
     font-size: medium;
-    animation: slide-up 1s ease-in-out ;
+    animation: insaneAnimation 2.5s infinite;
 }
 
+
+@keyframes insaneAnimation {
+    0% {
+        transform: scale(1);
+        background-color: #61dafb;
+        box-shadow: 0 0 10px rgba(97, 218, 251, 0.5);
+    }
+    25% {
+        transform: scale(1.1) rotate(10deg);
+        background-color: #21a1f1;
+        box-shadow: 0 0 20px rgba(33, 161, 241, 0.5);
+    }
+    50% {
+        transform: scale(1) rotate(-10deg);
+        background-color: #61dafb;
+        box-shadow: 0 0 30px rgba(97, 218, 251, 0.5);
+    }
+    75% {
+        transform: scale(1.1) rotate(10deg);
+        background-color: #21a1f1;
+        box-shadow: 0 0 20px rgba(33, 161, 241, 0.5);
+    }
+    100% {
+        transform: scale(1);
+        background-color: #61dafb;
+        box-shadow: 0 0 10px rgba(97, 218, 251, 0.5);
+    }
+} 
 .btn:hover{
     cursor: pointer;
-
-}
-@keyframes slide-up{
-    0%{
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
